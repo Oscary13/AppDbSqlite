@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDbSqlite.MainPage">
+
+    <ScrollView>
+        <AbsoluteLayout>
+
+            <Grid AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3" AbsoluteLayout.LayoutFlags="All">
+                <Border
+
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Border.StrokeShape>
+                        <Ellipse/>
+                    </Border.StrokeShape>
+                <Image Source="pera.jpg"/>
+                </Border>
+            </Grid>
+
+            <Label Text="INGRESA UNA FRUTA" AbsoluteLayout.LayoutBounds="0.5, 0.25, 300, 30" AbsoluteLayout.LayoutFlags="PositionProportional"  VerticalOptions="Start" Style="{StaticResource Label1}"/>
+
+            <Border 
+                AbsoluteLayout.LayoutBounds="0.5, 0.35, 300, 40" 
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="50, 50, 50, 50" />
+                </Border.StrokeShape>
+                
+                <Entry
+                    x:Name="NombreTxt"
+                    Placeholder="Nombre de la fruta" 
+                    Margin="10,0" 
+                    ClearButtonVisibility="WhileEditing"/>
+            </Border>
+
+            <Border 
+                AbsoluteLayout.LayoutBounds="0.5, 0.45, 300, 40" 
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="50, 50, 50, 50" />
+                </Border.StrokeShape>
+
+                <Entry 
+                    x:Name="ColorTxt"
+                    Placeholder="Color de la fruta" 
+                    Margin="10,0" 
+                    ClearButtonVisibility="WhileEditing"/>
+            </Border>
+
+            <Border 
+                AbsoluteLayout.LayoutBounds="0.5, 0.55, 300, 40" 
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="50, 50, 50, 50" />
+                </Border.StrokeShape>
+
+                <Entry 
+                    x:Name="CantidadTxt"
+                    Placeholder="Cantidad en unidades" 
+                    Margin="10,0" 
+                    ClearButtonVisibility="WhileEditing"/>
+            </Border>
+
+            <Border 
+                AbsoluteLayout.LayoutBounds="0.5, 0.65, 300, 40" 
+                AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="50, 50, 50, 50" />
+                </Border.StrokeShape>
+
+                <Entry
+                    x:Name="PrecioKgTxt"
+                    Placeholder="Precio por Kg" 
+                    Margin="10,0" 
+                    ClearButtonVisibility="WhileEditing"/>
+            </Border>
+
+            <Button 
+                x:Name="GuardarDatos"
+                AbsoluteLayout.LayoutBounds="0, 510, 400, 40"
+                Text="Guardar fruta" 
+                CornerRadius="100" 
+                WidthRequest="300"
+                Clicked="GuardarDatos_Clicked"/>
+
+            <ListView
+                AbsoluteLayout.LayoutBounds="0.5, 0.95, 300, 40" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                x:Name="FrutaListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre} " />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+        </AbsoluteLayout>
+    </ScrollView>
+
+</ContentPage>
