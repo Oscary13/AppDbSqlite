@@ -5,10 +5,12 @@ namespace AppDbSqlite;
 public partial class MainPage : ContentPage
 {
     FrutasModelo db = new FrutasModelo();
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+
+    public MainPage()
+    {
+        InitializeComponent();
+
+    }
 
     private void GuardarDatos_Clicked(object sender, EventArgs e)
     {
@@ -16,14 +18,14 @@ public partial class MainPage : ContentPage
         {
             Nombre = NombreTxt.Text,
             Color = ColorTxt.Text,
-            Cantidad= CantidadTxt.Text,
+            Cantidad = CantidadTxt.Text,
             PrecioKg = PrecioKgTxt.Text
         };
 
         db.Fruta.Add(fruta);
         db.SaveChangesAsync();
 
-        NombreTxt.Text= "";
+        NombreTxt.Text = "";
         ColorTxt.Text = "";
         CantidadTxt.Text = "";
         PrecioKgTxt.Text = "";
@@ -37,5 +39,9 @@ public partial class MainPage : ContentPage
         var fruta = db.Fruta.ToList();
         FrutaListView.ItemsSource = fruta;
     }
+
+
+
+
 }
 

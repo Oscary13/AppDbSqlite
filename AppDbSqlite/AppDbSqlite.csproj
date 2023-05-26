@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.appdbsqlite</ApplicationId>
-		<ApplicationIdGuid>1678671d-28d8-4d74-98eb-09b9fec4c569</ApplicationIdGuid>
+		<ApplicationIdGuid>141c3e00-d75b-40b2-bda0-f4705b83588f</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -49,16 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\AppIcon\pera.jpg" />
 	  <None Remove="Resources\Images\pera.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Include="Resources\AppIcon\pera.jpg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="EntityFramework" Version="6.4.4" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
 	</ItemGroup>
 

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap">
-  <Identity Name="1678671d-28d8-4d74-98eb-09b9fec4c569" Publisher="CN=User Name" Version="1.0.0.1" />
-  <mp:PhoneIdentity PhoneProductId="28F2A25F-44B3-45A4-B475-4D79A0E0F28F" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="141c3e00-d75b-40b2-bda0-f4705b83588f" Publisher="CN=User Name" Version="1.0.0.1" />
+  <mp:PhoneIdentity PhoneProductId="96427E9B-5E36-469B-8DF7-3BF390A23ADB" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>AppDbSqlite</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>

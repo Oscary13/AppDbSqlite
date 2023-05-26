@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppDbSqlite.Modelos
 {
-    class Fruta
+    internal class Fruta
     {
         public int FrutaID { get; set; }
         public String Nombre { get; set; }

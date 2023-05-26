@@ -1144,38 +1144,6 @@ app_system_properties:
 .L.env.buf.276:
 	.zero	65
 	.size	.L.env.buf.276, 65
-	.type	.L.env.buf.277, @object
-.L.env.buf.277:
-	.zero	65
-	.size	.L.env.buf.277, 65
-	.type	.L.env.buf.278, @object
-.L.env.buf.278:
-	.zero	65
-	.size	.L.env.buf.278, 65
-	.type	.L.env.buf.279, @object
-.L.env.buf.279:
-	.zero	65
-	.size	.L.env.buf.279, 65
-	.type	.L.env.buf.280, @object
-.L.env.buf.280:
-	.zero	65
-	.size	.L.env.buf.280, 65
-	.type	.L.env.buf.281, @object
-.L.env.buf.281:
-	.zero	65
-	.size	.L.env.buf.281, 65
-	.type	.L.env.buf.282, @object
-.L.env.buf.282:
-	.zero	65
-	.size	.L.env.buf.282, 65
-	.type	.L.env.buf.283, @object
-.L.env.buf.283:
-	.zero	65
-	.size	.L.env.buf.283, 65
-	.type	.L.env.buf.284, @object
-.L.env.buf.284:
-	.zero	65
-	.size	.L.env.buf.284, 65
 	# Bundled assemblies data
 
 	.type	bundled_assemblies, @object
@@ -3677,79 +3645,7 @@ bundled_assemblies:
 	.zero	4
 	.quad	.L.env.buf.276	# name
 
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.zero	4
-	.quad	0x0	# data
-	.long	0x0	# name_length
-	.zero	4
-	.quad	.L.env.buf.277	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.zero	4
-	.quad	0x0	# data
-	.long	0x0	# name_length
-	.zero	4
-	.quad	.L.env.buf.278	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.zero	4
-	.quad	0x0	# data
-	.long	0x0	# name_length
-	.zero	4
-	.quad	.L.env.buf.279	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.zero	4
-	.quad	0x0	# data
-	.long	0x0	# name_length
-	.zero	4
-	.quad	.L.env.buf.280	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.zero	4
-	.quad	0x0	# data
-	.long	0x0	# name_length
-	.zero	4
-	.quad	.L.env.buf.281	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.zero	4
-	.quad	0x0	# data
-	.long	0x0	# name_length
-	.zero	4
-	.quad	.L.env.buf.282	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.zero	4
-	.quad	0x0	# data
-	.long	0x0	# name_length
-	.zero	4
-	.quad	.L.env.buf.283	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.zero	4
-	.quad	0x0	# data
-	.long	0x0	# name_length
-	.zero	4
-	.quad	.L.env.buf.284	# name
-
-	.size	bundled_assemblies, 11400
+	.size	bundled_assemblies, 11080
 	# Assembly store individual assembly data
 	.type	assembly_store_bundled_assemblies, @object
 	.global	assembly_store_bundled_assemblies
@@ -3986,7 +3882,7 @@ dso_cache:
 	.size	dso_cache, 1152
 
 	#
-	# Generated from instance of: Xamarin.Android.Tasks.ApplicationConfig, Xamarin.Android.Build.Tasks, Version=12.3.99.76, Culture=neutral, PublicKeyToken=84e04ff9cfb79065
+	# Generated from instance of: Xamarin.Android.Tasks.ApplicationConfig, Xamarin.Android.Build.Tasks, Version=12.3.99.85, Culture=neutral, PublicKeyToken=84e04ff9cfb79065
 	#
 	.type	application_config, @object
 	.global	application_config
@@ -4009,7 +3905,7 @@ application_config:
 	.long	0x3	# package_naming_policy
 	.long	0xc	# environment_variable_count
 	.long	0x0	# system_property_count
-	.long	0x11d	# number_of_assemblies_in_apk
+	.long	0x115	# number_of_assemblies_in_apk
 	.long	0x41	# bundled_assembly_name_width
 	.long	0x2	# number_of_assembly_store_files
 	.long	0x24	# number_of_dso_cache_entries
@@ -4062,7 +3958,7 @@ application_config:
 
 	.type	.L.autostr.8, @object
 .L.autostr.8:
-	.asciz	"930f92cb-70f7-4ec2-a7b3-fad37bd7c50c"
+	.asciz	"dac284b5-181a-41fb-9ed1-c5d1a600e357"
 	.size	.L.autostr.8, 37
 
 	.type	.L.autostr.9, @object
@@ -4271,4 +4167,4 @@ application_config:
 	.size	.L.autostr.49, 28
 
 
-	.ident	"Xamarin.Android remotes/origin/release/6.0.4xx @ af4a25d50f5a602c77d05c2ec8c8644c00cffbbd"
+	.ident	"Xamarin.Android remotes/origin/release/6.0.4xx @ 619ab7a92a09825ecb274bf87d8086d2dbe63aea"

@@ -14,11 +14,18 @@
                     <Border.StrokeShape>
                         <Ellipse/>
                     </Border.StrokeShape>
-                <Image Source="pera.jpg"/>
+                    <Image Source="pera.jpg"/>
                 </Border>
             </Grid>
 
-            <Label Text="INGRESA UNA FRUTA" AbsoluteLayout.LayoutBounds="0.5, 0.25, 300, 30" AbsoluteLayout.LayoutFlags="PositionProportional"  VerticalOptions="Start" Style="{StaticResource Label1}"/>
+            <Label Text="INGRESA UNA FRUTA" 
+                   AbsoluteLayout.LayoutBounds="0.5, 0.25, 300, 30" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional"  
+                   FontSize="24"
+                   TextColor="Purple"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"/>
 
             <Border 
                 AbsoluteLayout.LayoutBounds="0.5, 0.35, 300, 40" 
@@ -26,7 +33,7 @@
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="50, 50, 50, 50" />
                 </Border.StrokeShape>
-                
+
                 <Entry
                     x:Name="NombreTxt"
                     Placeholder="Nombre de la fruta" 
@@ -84,7 +91,7 @@
                 WidthRequest="300"
                 Clicked="GuardarDatos_Clicked"/>
 
-            <ListView
+            <!--<ListView
                 AbsoluteLayout.LayoutBounds="0.5, 0.95, 300, 40" 
                 AbsoluteLayout.LayoutFlags="PositionProportional"
                 x:Name="FrutaListView">
@@ -93,7 +100,41 @@
                         <TextCell Text="{Binding Nombre} " />
                     </DataTemplate>
                 </ListView.ItemTemplate>
+            </ListView>-->
+
+            <!--<TableView ItemsSource="{Binding fruta}">
+                <TableSection>
+                    <TableSection.Title>
+                        <Label Text="Frutas" />
+                    </TableSection.Title>
+                    <TextCell Text="{Binding Nombre}" />
+                    <TextCell Text="{Binding Precio}" />
+                    --><!-- Agrega más columnas según tus necesidades --><!--
+                </TableSection>
+            </TableView>-->
+
+            <ListView AbsoluteLayout.LayoutBounds="0.5, 0.95, 300, 40" 
+          AbsoluteLayout.LayoutFlags="PositionProportional"
+          x:Name="FrutaListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nombre}" />
+                                <Label Text="----" />
+                                <Label Text="{Binding Color}" />
+                                <Label Text="----" />
+                                <Label Text="{Binding Cantidad}" />
+                                <Label Text="----" />
+                                <Label Text="{Binding PrecioKg}" />
+                                <!-- Agrega más elementos aquí según tus necesidades -->
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
+
+
 
 
 

@@ -2,13 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AppDbSqlite.Modelos
 {
-    class FrutasModelo : DbContext
+    internal class FrutasModelo : DbContext
     {
         public FrutasModelo()
         {
@@ -16,7 +15,6 @@ namespace AppDbSqlite.Modelos
 
             this.Database.EnsureCreated();
         }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string dbPath = Path.Combine(FileSystem.AppDataDirectory, "bdUPT.db3");

@@ -1,1 +1,0 @@
-C:\Users\EQUIPO-2\source\repos\AppDbSqlite\AppDbSqlite\AppDbSqlite.csproj;x64
